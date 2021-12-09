@@ -1,0 +1,209 @@
+/* Mobile Frist */
+/* Extra Small devices (phones, 0px and up) */
+
+/* @import url(aos.css); */
+
+/* fonts en remot */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+/* style imports */
+/* local fonts */
+@import url(font.css);
+/* neutral styles for different browsers */
+@import url(normalize.css);
+/* custom styles */
+@import url(custom.css);
+/* custom responsive styles */
+@import url(grid.css);
+
+:root{
+    --clr-primary: #ffffff;
+    --clr-primary-hover: #7f7f7f;
+        
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-broken-white: #fafafa;
+    --clr-broken-black: #1f1f1f;
+    
+    --clr-typo: ##1d1d1f;
+    --clr-outline: #d1d1d1;
+    
+    --clr-shadow: rgba(0,0,0, 0.05);
+    --clr-shadow-hover: rgba(0,0,0, 0.10);
+   
+    --transition-time: 0.18s;
+    --transition-ease: ease-out;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* si treballes amb rem canviar a la mediaquery font-size: X px per reduir tot el contingut a la vegada */
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    /* dark theme transition */
+    transition: background-color var(--transition-time) var(--transition-ease);
+}
+
+body *{
+    /* dark theme transition 2 */
+    transition: background-color var(--transition-time) var(--transition-ease);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: color var(--transition-time) var(--transition-ease);
+}
+
+p{
+    font-size: 14px;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+    <body> - Mobile Frist
+--------------------------------------------------------------*/
+
+main{
+    /* footer effect */
+    margin-bottom: 44px;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* footer effect - per defecte, background-color: transparent;*/
+    background-color: #fff;
+}
+
+section:last-child{
+    padding-bottom: 100px;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    transition: max-width var(--transition-time) var(--transition-ease);
+}
+
+.container-100{
+    width: 100%;
+    max-width: 100%;
+    transition: max-width var(--transition-time) var(--transition-ease);
+}
+
+.area{
+    margin: 15px;
+}
+
+/*--------------------------------------------------------------
+    <section> - hero - Mobile Frist
+--------------------------------------------------------------*/
+
+section.section-hero{
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+section.section-hero p{
+    text-align: justify;
+}
+
+/*--------------------------------------------------------------
+    <footer> - Mobile Frist
+--------------------------------------------------------------*/
+
+footer{
+    /* footer effect */
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 100%;
+    background-color: var(--clr-broken-black);
+    user-select: none;
+}
+
+footer p{
+    color: var(--clr-white);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: color var(--transition-time) var(--transition-ease);
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (small laptops, 1069px and up) */
+@media (min-width: 1069px) {
+
+}
+
+/* Large devices (portatils, 1200px and up) */
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* Extra large devices (sobretaula, 1441px and up) */
+@media (min-width: 1441px) {
+    .container{
+        max-width: 1440px;
+    }
+}
+
+/*--------------------------------------------------------------
+    @media - Compressed Screens
+--------------------------------------------------------------*/
+
+/* Tablets compressed height */
+@media screen and (max-width: 1068px) and (min-width: 768px) and (max-height: 733px) and (min-height: 0px) {
+
+}
+
+/* Laptops compressed height */
+@media screen and (max-width: 1440px) and (min-width: 1069px) and (max-height: 775px) and (min-height: 0px) {
+
+}
+
+/* Desktop compressed height */
+@media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) {
+
+}
