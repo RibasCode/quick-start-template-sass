@@ -170,23 +170,17 @@ footer p{
 
 }
 
-/* Large devices (small laptops, 1069px and up) */
+/* Large devices (laptops, 1069px and up) */
 @media (min-width: 1069px) {
 
-}
-
-/* Large devices (portatils, 1200px and up) */
-@media (min-width: 1200px) {
     .container{
         max-width: 1200px;
     }
 }
 
-/* Extra large devices (sobretaula, 1441px and up) */
+/* Extra large devices (desktop & big laptops, 1441px and up) */
 @media (min-width: 1441px) {
-    .container{
-        max-width: 1440px;
-    }
+
 }
 
 /*--------------------------------------------------------------
